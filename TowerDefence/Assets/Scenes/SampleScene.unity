@@ -4236,8 +4236,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f84a45a6abc16274d89eb66e9d702380, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  satartPoint: {fileID: 0}
-  path: []
+  satartPoint: {fileID: 555722730}
+  path:
+  - {fileID: 1148770683}
+  - {fileID: 41978929}
+  - {fileID: 785132860}
+  - {fileID: 1747035257}
+  - {fileID: 1764090738}
+  - {fileID: 801141783}
+  - {fileID: 1171287913}
+  - {fileID: 1408913395}
+  - {fileID: 271237423}
+  - {fileID: 1920143678}
+  - {fileID: 1859063412}
+  - {fileID: 183058263}
+  - {fileID: 2006099257}
+  - {fileID: 813009590}
+  - {fileID: 1157040361}
+  - {fileID: 1909633563}
 --- !u!1 &801141782
 GameObject:
   m_ObjectHideFlags: 0
