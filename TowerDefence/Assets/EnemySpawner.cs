@@ -4,15 +4,7 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [Header("Attributes")]
+    [SerializeField] private int baseEnemies = 8;
+    [SerializeField] private float enemiesPerSecond =
 }
