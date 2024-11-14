@@ -6,14 +6,16 @@ public class plot : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private SpriteRenderer sr;
+    [SerializeField] private Color hoverColor;
 
     private GameObject tower;
-
     private Color startColor;
+    
 
     private void Start()
     {
         startColor = sr.color;
+       
     }
 
 
@@ -31,6 +33,6 @@ public class plot : MonoBehaviour
 
     private void OnMouseDown()
     {
-        
+        Debug.Log("Build tower here: " + name);   
     }
 }
