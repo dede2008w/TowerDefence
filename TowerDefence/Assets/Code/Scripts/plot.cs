@@ -33,6 +33,9 @@ public class plot : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Debug.Log("Build tower here: " + name);   
+        if (tower != null) return;  
+
+        GameObject towerToBuild = BuildManager.main.GetSelectedTower();
+        tower = Instantiate(towerToBuild, transform.position, Quaternion.identity);
     }
 }
