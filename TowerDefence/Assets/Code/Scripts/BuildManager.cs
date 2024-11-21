@@ -9,9 +9,9 @@ public class BuildManager : MonoBehaviour
      public static BuildManager main;
 
 
-        [Header("References")]
-        [SerializeField] private GameObject[] towePrefabs;
-
+    [Header("References")]
+    //[SerializeField] private GameObject[] towePrefabs;
+    [SerializeField] private Tower[] towers;
         private int selectedTower = 0;
 
         private void Awake()
@@ -19,9 +19,9 @@ public class BuildManager : MonoBehaviour
             main = this;  
         }
     
-    public GameObject GetSelectedTower() 
+    public Tower GetSelectedTower() 
     { 
-     return towePrefabs[selectedTower];
+     return towers[selectedTower];
     
     }
 
