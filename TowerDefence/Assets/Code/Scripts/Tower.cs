@@ -1,18 +1,19 @@
 using System;
 using UnityEngine;
-[Serializable]
+
+// Classe que representa uma torre no jogo
+[Serializable] // Permite que a classe seja serializada, útil para armazenar dados em arquivos ou no editor
 public class Tower
 {
-    public string name;
-    public int cost;
-    public GameObject prefab;
+    public string name;      // Nome da torre
+    public int cost;         // Custo de construção da torre
+    public GameObject prefab; // Prefab da torre (modelo 3D ou 2D)
 
-    public Tower (string name, int cost, GameObject prefab)
+    // Construtor para inicializar a torre com valores específicos
+    public Tower(string _name, int _cost, GameObject _prefab)
     {
-        this.name = name;
-        this.cost = cost;
-        this.prefab = prefab;
+        name = _name;        // Inicializa o nome da torre
+        cost = _cost;       // Inicializa o custo da torre
+        prefab = _prefab;   // Inicializa o prefab da torre
     }
 }
- 
-
