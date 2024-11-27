@@ -79,7 +79,7 @@ public class EnemySpawner : MonoBehaviour // Classe que gerencia a criação de in
     private void SpawnEnemy() // Método para gerar um inimigo.
     {
         GameObject prefabToSpawn = enemyPrefabs[Random.Range(0, enemyPrefabs.Length)]; // Escolhe um prefab aleatório da lista de inimigos.
-        Instantiate(prefabToSpawn, LevelManager.instance.startPoint.position, Quaternion.identity); // Instancia o inimigo na posição inicial definida no LevelManager.
+        Instantiate(prefabToSpawn, LevelManager.main.startPoint.position, Quaternion.identity); // Instancia o inimigo na posição inicial definida no LevelManager.
     }
 
     private int EnemiesPerwave() // Calcula o número de inimigos para a onda atual com base na dificuldade.

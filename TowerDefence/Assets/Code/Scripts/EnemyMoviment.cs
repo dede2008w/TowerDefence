@@ -15,7 +15,7 @@ public class EnemyMovement : MonoBehaviour
     private void Start()
     {
         baseSpeed = moveSpeed; // Armazena a velocidade base
-        target = LevelManager.instance.path[pathIndex]; // Define o primeiro alvo
+        target = LevelManager.main.path[pathIndex]; // Define o primeiro alvo
     }
 
     private void Update()
@@ -24,7 +24,7 @@ public class EnemyMovement : MonoBehaviour
         {
             pathIndex++; // Avança para o próximo caminho
 
-            if (pathIndex == LevelManager.instance.path.Length) // Se chegou ao final do caminho
+            if (pathIndex == LevelManager.main.path.Length) // Se chegou ao final do caminho
             {
                 EnemySpawner.onEnemyDestroy.Invoke(); // Notifica que o inimigo foi destruído
                 Destroy(gameObject); // Remove o inimigo da cena
@@ -32,7 +32,7 @@ public class EnemyMovement : MonoBehaviour
             }
             else
             {
-                target = LevelManager.instance.path[pathIndex]; // Atualiza o alvo
+                target = LevelManager.main.path[pathIndex]; // Atualiza o alvo
             }
         }
     }

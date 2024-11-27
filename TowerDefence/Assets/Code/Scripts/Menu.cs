@@ -19,7 +19,7 @@ public class Menu : MonoBehaviour // Classe que controla o menu do jogo, incluin
 
     private void OnGUI() // Método chamado para atualizar a interface gráfica do usuário.
     {
-        currencyUI.text = LevelManager.instance.currency.ToString(); // Atualiza o texto da UI com o valor atual de moedas do LevelManager.
+        currencyUI.text = LevelManager.main.currency.ToString(); // Atualiza o texto da UI com o valor atual de moedas do LevelManager.
     }
 
     public void SetTower() // Método reservado para definir uma torre (implementação futura).
