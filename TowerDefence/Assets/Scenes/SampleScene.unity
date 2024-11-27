@@ -3742,7 +3742,7 @@ GameObject:
   - component: {fileID: 717752541}
   - component: {fileID: 717752540}
   m_Layer: 5
-  m_Name: TurretHig
+  m_Name: torretslow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3819,7 +3819,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 1
           m_BoolArgument: 0
@@ -4510,9 +4510,9 @@ MonoBehaviour:
   - name: Basic turret
     cost: 100
     prefab: {fileID: 4039805449216936581, guid: f2f53fff25afe684db89cb4933c8b646, type: 3}
-  - name: Turrethig
-    cost: 150
-    prefab: {fileID: 4039805449216936581, guid: 3120d7fa4b4762c45aebb66b3af60562, type: 3}
+  - name: torretslow
+    cost: 100
+    prefab: {fileID: 4039805449216936581, guid: b506f092c2c4fa94c9c0608a295cd303, type: 3}
 --- !u!1 &801141782
 GameObject:
   m_ObjectHideFlags: 0
@@ -9051,7 +9051,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d5502df7399f0d4684d160c798bac79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currencyUI: {fileID: 0}
+  currencyUI: {fileID: 905585893}
   animator: {fileID: 0}
 --- !u!1001 &1628861496
 PrefabInstance:

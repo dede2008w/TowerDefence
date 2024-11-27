@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 251510466554724915}
   - component: {fileID: 7696318514687748183}
-  - component: {fileID: 7861849772267108558}
+  - component: {fileID: 1103604726370922328}
   m_Layer: 0
-  m_Name: Turret
+  m_Name: torretslomo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.5283019, g: 0.36295733, b: 0.05731578, a: 1}
+  m_Color: {r: 0.9716981, g: 0.38427842, b: 0.114587024, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -86,7 +86,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7861849772267108558
+--- !u!114 &1103604726370922328
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,7 +95,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4039805449216936581}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ce414e87a5813c4990ee7cacd02e4e0, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ae8e65cc6d9b3d4d80f6ec467d550f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   targetingRange: 5
@@ -103,8 +103,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   bulletPrefab: {fileID: 7305379884457368487, guid: 876f404e4741cf747a4993e77bb1576a, type: 3}
-  firingPoint: {fileID: 7874103973177920668}
+  firingPoint: {fileID: 0}
   bps: 1
+  aps: 4
+  FreezeTime: 1
 --- !u!1 &5073438252097321864
 GameObject:
   m_ObjectHideFlags: 0
