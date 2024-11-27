@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using static UnityEditor.Progress;
 
 public class EnemyMovement : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class EnemyMovement : MonoBehaviour
     private Transform target; // Alvo atual
     private int pathIndex = 0; // Índice do caminho
     private float baseSpeed; // Velocidade base do inimigo
+    
 
     private void Start()
     {
@@ -51,5 +53,18 @@ public class EnemyMovement : MonoBehaviour
     public void ResetSpeed() // Reseta a velocidade do inimigo
     {
         moveSpeed = baseSpeed;
+
+
     }
+
+    
+
+    // Método chamado quando o inimigo morre
+    public virtual void OnMorte()
+    {
+        EnemySpawner.onEnemyDestroy.Invoke(); // Invoca evento de destruição do inimigo
+        Destroy(gameObject); // Destroi o objeto inimigo
+        LevelManager.main.IncreaseCurrency(Health.currencyWorth); // Aumenta a moeda do jogador
+    }
+    
 }

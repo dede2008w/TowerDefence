@@ -5,7 +5,7 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [SerializeField] protected float hitPoints = 2; // Pontos de vida do inimigo
-    [SerializeField] private int currencyWorth = 50; // Quantidade de moeda que o inimigo gera ao ser destruído
+    [SerializeField] public int currencyWorth = 50; // Quantidade de moeda que o inimigo gera ao ser destruído
 
     protected bool isDestroyed = false; // Flag para verificar se o inimigo já foi destruído
 
