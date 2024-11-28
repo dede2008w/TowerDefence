@@ -62,6 +62,7 @@ public class EnemySpawner : MonoBehaviour // Classe que gerencia a criação de in
         timesinceLastSpawn = 0f; // Reseta o tempo desde o último inimigo gerado.
         currentwave++; // Incrementa o número da onda atual.
         StartCoroutine(StartWave()); // Inicia a próxima onda após o período de espera.
+        AdManager.instance.ShowNextAd();
     }
 
     private void EnemyDestroyed() // Método chamado quando um inimigo é destruído.
