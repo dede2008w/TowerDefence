@@ -8,7 +8,7 @@ public class EnemyMovement : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D rb; // Rigidbody do inimigo
     [SerializeField] private float moveSpeed = 2f; // Velocidade de movimento do inimigo
-
+    [SerializeField] private int currentWorth = 50;
     private Transform target; // Alvo atual
     private int pathIndex = 0; // Índice do caminho
     private float baseSpeed; // Velocidade base do inimigo
@@ -28,6 +28,8 @@ public class EnemyMovement : MonoBehaviour
 
             if (pathIndex == LevelManager.main.path.Length) // Se chegou ao final do caminho
             {
+                OnMorte();
+                LevelManager.main.GameOver();
                 EnemySpawner.onEnemyDestroy.Invoke(); // Notifica que o inimigo foi destruído
                 Destroy(gameObject); // Remove o inimigo da cena
                 return;
@@ -64,7 +66,7 @@ public class EnemyMovement : MonoBehaviour
     {
         EnemySpawner.onEnemyDestroy.Invoke(); // Invoca evento de destruição do inimigo
         Destroy(gameObject); // Destroi o objeto inimigo
-        LevelManager.main.IncreaseCurrency(Health.currencyWorth); // Aumenta a moeda do jogador
+        LevelManager.main.IncreaseCurrency(currentWorth); // Aumenta a moeda do jogador
     }
     
 }
